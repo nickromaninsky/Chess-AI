@@ -1,0 +1,27 @@
+.board {
+    
+    width: 400px;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    position: absolute;
+    top: 10%;
+    left: 29%;
+}
+
+.info {
+    width: 4000px;
+    margin: auto;
+    text-align: left;
+}
+
+.move-history {
+    max-height: 100px;
+    overflow-y: scroll;
+    text-align: left;
+}
