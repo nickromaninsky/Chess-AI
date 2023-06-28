@@ -150,8 +150,22 @@ var kingEvalWhite = [
 var kingEvalBlack = reverseArray(kingEvalWhite);
 
 
+var whiteEval = pawnEvalWhite + knightEval + bishopEvalWhite + rookEvalWhite + evalQueen + kingEvalWhite
+
+var blackEval = pawnEvalBlack + knightEval + bishopEvalBlack + rookEvalBlack + evalQueen + kingEvalBlack
 
 
+
+let findWinner = () => {
+    if (whiteEval > blackEval) {
+        console.log("1")
+    } else if (blackEval > whiteEval) {
+        console.log("2")
+    }
+    
+}
+btn.addEventListener("click",findWinner);
+findWinner();
 var getPieceValue = function (piece, x, y) {
     if (piece === null) {
         return 0;
